@@ -15,18 +15,14 @@
 body {
   min-width: 320px;
   color: rgba(#fff, 0.7);
-  // background: linear-gradient(
-  //     90deg,
-  //     rgba(0, 0, 0, 0.6) 0%,
-  //     rgba(111, 111, 111, 0) 100%
+  // background: radial-gradient(
+  //     100% 100% at 50.58% 0%,
+  //     rgba(47, 47, 47, 0.5) 0%,
+  //     rgba(0, 0, 0, 0) 100%
   //   ),
-  //   #222;
-  background: radial-gradient(
-      100% 100% at 50.58% 0%,
-      rgba(47, 47, 47, 0.5) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    #212121;
+  //   #212121;
+  background: url("../img/body-bg.svg") no-repeat center;
+  background-size: cover;
   font-family: var(--font-default);
   font-size: 18px;
   line-height: 1.6;
@@ -36,6 +32,15 @@ body {
 
   &.dis-scroll {
     overflow: hidden;
+  }
+
+  @media (max-width: 992px) {
+    background: radial-gradient(
+        100% 100% at 50.58% 0%,
+        rgba(47, 47, 47, 0.5) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      #212121;
   }
 
   @media (max-width: 480px) {
