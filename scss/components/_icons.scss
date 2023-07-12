@@ -1,0 +1,35 @@
+.ic-phone {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icons/ic-phone.svg") no-repeat center;
+  background-size: cover;
+}
+
+.ic-email {
+  @extend .ic-phone;
+  background: url("../img/icons/ic-email.svg") no-repeat center;
+}
+
+.ic-marker {
+  @extend .ic-phone;
+  background: url("../img/icons/ic-marker.svg") no-repeat center;
+}
+
+.ic-instagram {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("../img/icons/ic-instagram.svg") no-repeat center;
+  background-size: cover;
+}
+
+.ic-tiktok {
+  @extend .ic-instagram;
+  background: url("../img/icons/ic-ticktok.svg") no-repeat center;
+}
+
+.ic-linkedin {
+  @extend .ic-instagram;
+  background: url("../img/icons/ic-linkedin.svg") no-repeat center;
+}

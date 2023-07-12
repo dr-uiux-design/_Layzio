@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+	<link rel="icon" type="image/png" href="./favicon/favicon.png">
+	<title>Layzio - Innovation in the world of convenience</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/main.min.css">
+	<!-- JS -->
+	<script defer src="js/main.js"></script>
+	<script defer src="js/form.js"></script>
+</head>
+
+<body class="page__body">
+	<div class="page__wrapper">
+
+		<!----------- Header ------------->
+		<header class="header">
+			<div class="container header__container">
+				<!-- nav -->
+				<div class="nav-overlay"></div>
+				<nav class="nav">
+					<ul class="nav__menu menu">
+						<li class="menu__item"><a href="./" class="menu__link">Home</a></li>
+						<li class="menu__item"><a href="./about.html" class="menu__link">About Us</a></li>
+						<li class="menu__item"><a href="./contacts.html" class="menu__link active">Contacts</a></li>
+					</ul>
+				</nav>
+
+				<!-- logo -->
+				<a href="./" class="logo">
+					<img class="logo__img" loading="lazy" src="./img/logo.svg" width="145" height="56" alt="Layzio">
+				</a>
+
+				<div class="header__right">
+					<!-- email -->
+					<a href="mailto:requests@layzio.me" target="_blank" class="header__email">
+						<svg class="ic-email" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_2_335)">
+								<path
+									d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM19 18H5C4.45 18 4 17.55 4 17V8L10.94 12.34C11.59 12.75 12.41 12.75 13.06 12.34L20 8V17C20 17.55 19.55 18 19 18ZM12 11L4 6H20L12 11Z"
+									fill="white" fill-opacity="0.8" />
+							</g>
+							<defs>
+								<clipPath id="clip0_2_335">
+									<rect width="24" height="24" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+						requests@layzio.me
+					</a>
+
+					<!-- btn-burger -->
+					<button type="button" class="btn-burger" aria-label="Open Menu"><span class="btn-burger__line"></span></button>
+				</div>
+			</div>
+		</header>
+		<!-- / .header -->
+
+		<main class="page__main">
+
+			<!----------- Contacts ------------->
+			<section class="page-section contacts">
+				<div class="container contacts__container">
+					<!-- contacts__info -->
+					<div class="contacts-info">
+						<h2 class="page-title contacts__title">Contacts</h2>
+						<!-- contacts__list -->
+						<ul class="contacts__list list-contacts">
+							<li class="contact-item">
+								<i class="contact-item__icon ic-phone"></i>
+								<a href="tel:+5491127620417" target="_blank" class="contact-phone">
+									+ 54 911 2762 0417
+								</a>
+							</li>
+							<li class="contact-item">
+								<i class="contact-item__icon ic-email"></i>
+								<a href="mailto:requests@layzio.me" target="_blank" class="contact-email">
+									requests@layzio.me
+								</a>
+							</li>
+							<li class="contact-item">
+								<i class="contact-item__icon ic-marker"></i>
+								Buenos Aires, Argentina Av. <br>Juan Bautista Justo 1045
+							</li>
+						</ul>
+						<!-- social -->
+						<ul class="social">
+							<li class="social__item">
+								<a href="#" target="_blank" class="social__link">
+									<i class="ic-instagram"></i>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="#" target="_blank" class="social__link">
+									<i class="ic-tiktok"></i>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="https://www.linkedin.com/company/layzio/" target="_blank" class="social__link">
+									<i class="ic-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- contacts__feedback -->
+					<div class="contacts-feedback">
+						<h2 class="page-title contacts__title">Feedback</h2>
+
+						<!-- form-feedback -->
+						<form action="" method="POST" class="form form-feedback">
+							<!-- hidden -->
+							<input type="hidden" name="project_name" value="Заявка с сайта «Layzio">
+							<input type="hidden" name="admin_email" value="requests@layzio.me">
+							<input type="hidden" name="form_subject" value="Форма - Feedback (страница контакты)">
+							<!-- hidden -->
+							<div class="form__body">
+								<div class="input-field">
+									<input type="text" name="Name" class="input-field__input" placeholder=" " autocomplete="off">
+									<label class="input-field__label">Your Name</label>
+								</div>
+								<div class="input-field">
+									<input type="email" name="Email address" class="input-field__input" placeholder=" " autocomplete="off" required>
+									<label class="input-field__label">Your E-mail</label>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Message" class="input-field__input input-email" placeholder=" " autocomplete="off">
+									<label class="input-field__label">Your Message</label>
+								</div>
+								<button type="submit" class="btn form-feedback__btn">Send Now</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- / .page__main -->
+
+		<!----------- Footer ------------->
+		<footer class="footer">
+			<div class="container footer__container">
+				<p class="footer__text">© Copyrighting 2023, All rights reserved.</p>
+				<a href="./privacy.html" class="privacy-link">Privacy Police</a>
+			</div>
+		</footer>
+	</div>
+	<!-- / .page__wrapper -->
+
+	<!----------- Modal Tanks ------------->
+	<div class="modal-thanks">
+		<div class="modal-thanks__overlay">
+			<div class="modal-thanks__body">
+				<div class="modal-thanks__close"></div>
+				<img src="./img/icons/ic-success.svg" width="96" height="96" alt="" class="modal-thanks__icon">
+				<h3 class="modal-thanks__title">Thanks!</h3>
+				<div class="modal-thanks__descr">Our manager will contact you
+					after a while.</div>
+			</div>
+		</div>
+	</div>
+	<!----------- / Modal Tanks ------------->
+</body>
+
+</html>

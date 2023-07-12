@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+	<link rel="icon" type="image/png" href="./favicon/favicon.png">
+	<title>Layzio - Innovation in the world of convenience</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/main.min.css">
+	<!-- JS -->
+	<script defer src="js/main.js"></script>
+	<script defer src="js/form.js"></script>
+</head>
+
+<body class="page__body">
+	<div class="page__wrapper">
+
+		<!----------- Header ------------->
+		<header class="header">
+			<div class="container header__container">
+				<!-- nav -->
+				<div class="nav-overlay"></div>
+				<nav class="nav">
+					<ul class="nav__menu menu">
+						<li class="menu__item"><a href="./about.html" class="menu__link">About Us</a></li>
+						<li class="menu__item"><a href="./contacts.html" class="menu__link">Contacts</a></li>
+					</ul>
+				</nav>
+
+				<!-- logo -->
+				<a href="./" class="logo">
+					<img class="logo__img" loading="lazy" src="./img/logo.svg" width="145" height="56" alt="Layzio">
+				</a>
+				<div class="header__right">
+					<!-- email -->
+					<a href="mailto:requests@layzio.me" target="_blank" class="header__email">
+						<svg class="ic-email" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_2_335)">
+								<path
+									d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM19 18H5C4.45 18 4 17.55 4 17V8L10.94 12.34C11.59 12.75 12.41 12.75 13.06 12.34L20 8V17C20 17.55 19.55 18 19 18ZM12 11L4 6H20L12 11Z"
+									fill="white" fill-opacity="0.8" />
+							</g>
+							<defs>
+								<clipPath id="clip0_2_335">
+									<rect width="24" height="24" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+						requests@layzio.me
+					</a>
+
+					<!-- btn-burger -->
+					<button type="button" class="btn-burger" aria-label="Open Menu"><span class="btn-burger__line"></span></button>
+				</div>
+			</div>
+		</header>
+		<!-- / .header -->
+
+		<main class="page__main">
+
+			<!----------- Hero ------------->
+			<section class="hero">
+				<div class="container hero__container">
+					<div class="hero__content">
+						<div class="comming-soon">Coming soon</div>
+						<h1 class="hero__title">Innovation in the world of convenience</h1>
+						<p class="hero__desc">Stylish design, new fixation technology, durability and quality will make your work from home much more
+							comfortable.
+						</p>
+						<form action="" method="POST" class="form-notify">
+							<!-- hidden -->
+							<input type="hidden" name="project_name" value="Заявка с сайта «Layzio">
+							<input type="hidden" name="admin_email" value="requests@layzio.me">
+							<input type="hidden" name="form_subject" value="Форма - Notify Me (главная страница)">
+							<!-- hidden -->
+							<div class="form__box">
+								<input type="email" class="form-notify__input email" placeholder="Enter your email" autocomplete="off" required>
+								<button type="submit" class="btn form-notify__btn">Notify me</button>
+							</div>
+						</form>
+					</div>
+					<div class="hero__img">
+						<picture>
+							<source srcset="./img/product-photo.webp" type="image/webp">
+							<img loading="lazy" src="./img/product-photo.png" class="product-photo" width="" height="" alt="">
+						</picture>
+					</div>
+				</div>
+			</section>
+			<!-- / .hero -->
+		</main>
+		<!-- / .page__main -->
+
+		<!----------- Footer ------------->
+		<footer class="footer">
+			<div class="container footer__container">
+				<p class="footer__text">© Copyrighting 2023, All rights reserved.</p>
+				<a href="./privacy.html" class="privacy-link">Privacy Police</a>
+			</div>
+		</footer>
+	</div>
+	<!-- / .page__wrapper -->
+
+	<!----------- Modal Tanks ------------->
+	<div class="modal-thanks">
+		<div class="modal-thanks__overlay">
+			<div class="modal-thanks__body">
+				<div class="modal-thanks__close"></div>
+				<img src="./img/icons/ic-success.svg" width="96" height="96" alt="" class="modal-thanks__icon">
+				<h3 class="modal-thanks__title">Thanks!</h3>
+				<div class="modal-thanks__descr">Our manager will contact you
+					after a while.</div>
+			</div>
+		</div>
+	</div>
+	<!----------- / Modal Tanks ------------->
+</body>
+
+</html>

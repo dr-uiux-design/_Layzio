@@ -1,0 +1,21 @@
+.footer {
+  padding: 16px 0;
+  color: rgba(#fff, 0.5);
+  font-size: 16px;
+  text-align: center;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 14px;
+  }
+  .footer__container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,15 @@
+.privacy {
+  padding: 48px 0;
+
+  &__container {
+    width: 100%;
+    max-width: 960px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}

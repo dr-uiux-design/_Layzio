@@ -1,0 +1,67 @@
+$btn-hight: 64px;
+$btn-padding: 0 32px;
+$btn-color: #141414;
+$btn-bg: #fff;
+$btn-boder: 1.5px solid transparent;
+$btn-br: 100px;
+$btn-ff: var(--font-default);
+$btn-fz: 16px;
+$btn-fw: 700;
+$btn-lh: 1.2;
+$btn-bxs: none;
+
+.btn {
+  height: $btn-hight;
+  padding: $btn-padding;
+  color: $btn-color;
+  background: $btn-bg;
+  border: $btn-boder;
+  border-radius: $btn-br;
+  font-family: $btn-ff;
+  font-size: $btn-fz;
+  font-weight: $btn-fw;
+  line-height: $btn-lh;
+  text-decoration: none;
+  box-shadow: $btn-bxs;
+  text-transform: uppercase;
+  transition: all 0.35s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  &:hover {
+    box-shadow: 0 0 36px rgba(#fff, 0.5);
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+.btn-stroke {
+  color: $btn-bg;
+  background: transparent;
+  border-color: $btn-bg;
+}
+
+.btns-group {
+  display: flex;
+  flex-wrap: wrap;
+
+  .btn {
+    &:not(:last-child) {
+      margin-right: 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    display: block;
+    .btn {
+      width: 100%;
+    }
+  }
+}

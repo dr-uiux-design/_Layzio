@@ -1,0 +1,44 @@
+.about {
+  &__body {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+    color: rgb(#fff, 0.7);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about p {
+    font-size: 18px;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .about p {
+    font-size: 16px;
+  }
+
+  .about__subtitle {
+    font-size: 24px;
+  }
+}

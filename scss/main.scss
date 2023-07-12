@@ -1,0 +1,19 @@
+@import "./base/03-default";
+
+/* ------------------- COMPONENTS -------------------- */
+@import "./components/btn";
+@import "./components/btn-top";
+@import "./components/btn-burger";
+@import "./components/input";
+@import "./components/icons";
+@import "./components/modal-thanks";
+
+/* ------------------- BLOCKS -------------------- */
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/hero";
+
+/* ------------------- PAGES -------------------- */
+@import "./pages/about";
+@import "./pages/contacts";
+@import "./pages/privacy";
