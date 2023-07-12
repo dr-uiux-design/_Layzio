@@ -1,3 +1,9 @@
+/* ------------------- Preloader -------------------- */
+window.addEventListener('load', function () {
+  const preLoader = document.querySelector('.preloader');
+  preLoader.classList.add('is-hide');
+});
+
 const body = document.body; // переменная body
 
 // Запрет перетаскивания ссылок и картинок
